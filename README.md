@@ -1,6 +1,6 @@
 # Creating "Global" ARX and V-ARX models in MATLAB.
 Mechanical Engineer Thesis project - Health monitorig via Stochastic Models
-
+By "global" it is meant that a number of models is created for each observed state and then via cubic interpolation using spline polynomials a final "global" model is created.
 Dynamic identification and the estimation of the liquid level in an elevated liquid tank via vibration signal measurements.
 ----------------------------------------------------------------------
 ### Abstract
