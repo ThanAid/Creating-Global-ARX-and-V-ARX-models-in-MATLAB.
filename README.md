@@ -14,7 +14,7 @@ In the first section, a parametric analysis of the structure using the stochasti
 In the next section, the models Global-ARX, Global-VARX and FP-VARX are used for the estimation of the level of the liquid using unknown experimental measurements. Those measurements were not used for the estimation of the models. Then, the real value of the level is compared with the estimated value for every signal. The Global-VARX and FP-VARX models are capable of estimating the level of the liquid with decent accuracy, although the Global-ARX isn’t capable of identifying the level when the liquid tank is full for some measurements. The conclusion of the present study is that the FP-VARX model has the best accuracy in comparison with the other two, but is also the most complex one. The estimations of the less complex model Global-VARX were also decent but with less accuracy. 
 
 ----------------------------------------------------------------------
-The function PooledARX_all_h is an implementation of an ARX model for system identification. It takes as input a number of experiment data sets, represented as cells x{} and y{}, and estimates an ARX model for each of the experiments. The estimated models are then used to compute the frequency response function (FRF) for the system at different heights. Via cubic interpolation using Spline polynomials.The code also includes some visualizations of the computed FRF.
+The function PooledARX_all_h is an implementation of a global ARX model for system identification. It takes as input a number of experiment data sets, represented as cells x{} and y{}, and estimates an ARX model for each of the experiments. The estimated models are then used to compute the frequency response function (FRF) for the system at different heights Via cubic interpolation using Spline polynomials.The code also includes some visualizations of the computed FRF.
 
 Here is an example:
 ![glob_arx](glob_arx.jpg)
@@ -23,7 +23,7 @@ Here is an example:
 The function kestimationPooledARX.m is used to make predictions for the state of the structure using the model created by PooledARX_all_h.
 
 ----------------------------------------------------------------------
-The function PooledVARX_all_h is an implementation of an Vector - ARX model for system identification. It takes as input a number of experiment data sets, represented as cells x{} and y{}, and estimates an ARX model for each of the experiments. The estimated models are then used to compute the frequency response function (FRF) for the system at different heights. Via cubic interpolation using Spline polynomials.The code also includes some visualizations of the computed FRF.
+The function PooledVARX_all_h is an implementation of a global Vector - ARX model for system identification. It takes as input a number of experiment data sets, represented as cells x{} and y{}, and estimates an ARX model for each of the experiments. The estimated models are then used to compute the frequency response function (FRF) for the system at different heights. Via cubic interpolation using Spline polynomials.The code also includes some visualizations of the computed FRF.
 
 Here is an example:
 ![glob_varx](glob_varx.jpg)
