@@ -20,7 +20,7 @@ The function kestimationPooledARX.m is used to make predictions for the state of
 ----------------------------------------------------------------------
 The function PooledVARX_all_h is an implementation of an Vector - ARX model for system identification. It takes as input a number of experiment data sets, represented as cells x{} and y{}, and estimates an ARX model for each of the experiments. The estimated models are then used to compute the frequency response function (FRF) for the system at different heights. Via cubic interpolation using Spline polynomials.The code also includes some visualizations of the computed FRF.
 Here is an example:
-![glob_varx](glob_arx.jpg)
+![glob_varx](glob_varx.jpg)
 
 ----------------------------------------------------------------------
 The function kestimationPooledVARX.m is used to make predictions for the state of the structure using the model created by PooledVARX_all_h.
